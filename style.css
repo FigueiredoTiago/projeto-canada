@@ -37,29 +37,34 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
+  
 }
 
 .img1 {
   background-image: url("img/mouraineG.jpg");
+  background-attachment: fixed;
   background-position: bottom center;
 }
 
 .img2 {
   background-image: url("img/grouseG.jpg");
+  background-attachment: fixed;
 }
 
 .img3 {
   background-image: url("img/niagaraG.jpg");
+  background-attachment: fixed;
 }
 
 .img4 {
   background-image: url("img/yukonG.jpg");
+  background-attachment: fixed;
 }
 
 .img6 {
   background-image: url("img/flag1.jpg");
   background-position: top bottom;
+  background-attachment: fixed;
   height: 700px;
   display: flex;
   justify-content: center;
