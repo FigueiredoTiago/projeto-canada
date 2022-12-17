@@ -14,6 +14,8 @@ section {
   flex-direction: column;
 }
 
+
+
 .text {
   font-size: 1em;
   width: 100%;
@@ -41,7 +43,7 @@ body h1:hover {
 }
 
 #sombra {
-  box-shadow:0px 5px 19px 5px #000000;
+  box-shadow: 0px 5px 19px 5px #000000;
 }
 
 .parallax {
@@ -191,4 +193,72 @@ footer {
     background-image: url('img/yukonP.jpg');
 
   }
+}
+
+/*Carrossel*/
+
+
+.gallery {
+  height: 100vh;
+  width: 100%;
+  background-color: #D9D9D9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery h2 {
+  margin-top: 3rem;
+}
+
+.gallery .carousel {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel__slide {
+  width: 60%;
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 5rem;
+
+
+}
+
+.carousel__slide span {
+  color: #0a0a0a;
+  background-color: #ebebeb;
+  border-radius: 5px;
+  padding: 2px 5px;
+  font-size: 0.8rem;
+  display: inline-block;
+
+}
+
+.img-c1 {
+  background-image: url("img/carousel/brokeg.jpg");
+}
+
+.img-c2 {
+  background-image: url("img/carousel/jasperg.jpg");
+}
+
+.img-c3 {
+  background-image: url("img/carousel/morencyg.jpeg.webp");
+}
+
+@media screen and (max-width:500px) {
+  .img-c1 {
+    background-image: url("img/carousel/brokep.png");
+  }
+
+  .img-c2 {
+    background-image: url("img/carousel/jasperp.jpg");
+  }
+
+  .img-c3 {
+    background-image: url("img/carousel/morencyp.jpg");
+  }
+
 }
