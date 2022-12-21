@@ -145,6 +145,7 @@ section {
 
 .flag img {
   width: 25px;
+  height: 25px;
 }
 
 body h1:hover {
