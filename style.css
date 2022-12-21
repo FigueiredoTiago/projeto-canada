@@ -43,7 +43,9 @@ a:hover {
   justify-content: center;
 }
 
-
+#header h2 span {
+  color: #D92534;
+}
 
 #header {
   box-sizing: border-box;
