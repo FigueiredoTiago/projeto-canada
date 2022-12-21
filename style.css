@@ -338,12 +338,12 @@ footer {
 .swiper-slide .slide-img {
   display: block;
   width: 100%;
-  border: 20px groove #d92534;
+  border: 8px groove #d92534;
 }
 
 @media screen and (max-width:500px) {
   .swiper {
-    width: 300px;
+    width: 345px;
   }
 
   #galery {
