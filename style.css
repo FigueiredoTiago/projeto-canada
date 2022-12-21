@@ -143,6 +143,10 @@ section {
   transition: 0.3s;
 }
 
+.flag img {
+  width: 25px;
+}
+
 body h1:hover {
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.829);
   transform: scale(1.1);
@@ -331,7 +335,7 @@ footer {
   height: 500px;
 }
 
-.swiper-slide img {
+.swiper-slide .slide-img {
   display: block;
   width: 100%;
   border: 20px groove #d92534;
