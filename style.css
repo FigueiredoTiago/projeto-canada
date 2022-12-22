@@ -38,7 +38,7 @@ a {
 }
 
 a::after {
-  content:' ';
+  content: ' ';
   width: 0%;
   height: 3px;
   background-color: #000000;
@@ -133,8 +133,10 @@ a:hover {
   #menu a:hover {
     background-color: black;
     color: #D9D9D9;
-    border-radius: 1rem;
+  }
 
+  a::after {
+    background-color: #fff;
   }
 }
 
@@ -257,7 +259,7 @@ footer {
   height: 150px;
   background-color: #D92534;
   text-align: center;
-  color:#D9D9D9;
+  color: #D9D9D9;
 }
 
 @media screen and (min-width:1300px) {
