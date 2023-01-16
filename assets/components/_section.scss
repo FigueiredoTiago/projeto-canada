@@ -1,0 +1,185 @@
+section {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  font-size: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  text-indent: 30px;
+  padding: 0 20px 0 20px;
+  background-color: #D92534;
+  color: white;
+  box-shadow: 0px 5px 19px 5px #000000;
+}
+
+.text h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.flag img {
+  width: 25px;
+  height: 25px;
+}
+
+body h1:hover {
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.829);
+  transform: scale(1.1);
+}
+
+#sombra {
+  box-shadow: 0px 5px 19px 5px #000000;
+}
+
+//styles imgs
+
+.parallax {
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.grouse-moutain {
+  height: auto;
+  padding: 20px;
+}
+
+
+
+.img1 {
+  background-image: url("../../img/mouraineG.jpg");
+  background-position: bottom center;
+}
+
+.img2 {
+  background-image: url("../../img/grouseG.jpg");
+}
+
+.img3 {
+  background-image: url("../../img/niagaraG.jpg");
+}
+
+.img4 {
+  background-image: url("../../img/yukonG.jpg");
+}
+
+.img6 {
+  background-image: url("../../img/flag1.jpg");
+  background-position: top bottom;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.img6 h1 {
+  font-size: 4em;
+  color: #e6e3e3;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.829);
+  letter-spacing: 1px;
+  transition: 0.2s;
+}
+
+.img6 p {
+  color: #e6e3e3;
+  font-weight: bolder;
+  background-color: black;
+  font-size: 1.3rem;
+  -moz-border-radius-topleft: 70px;
+  -moz-border-radius-bottomright: 70px;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+}
+
+//@media
+
+
+@media screen and (min-width:1300px) {
+  .text>p {
+    width: 1000px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+}
+
+@media screen and (max-width:810px) {
+  .grouse-moutain {
+    height: auto;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .img6 h1 {
+    font-size: 2.3em;
+  }
+
+  .img6 p {
+    font-size: 0.8em;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .img6 {
+    background-image: url("../../img/flagP.jpg");
+  }
+
+  .text {
+    height: 415px;
+  }
+
+  .text>p {
+    font-size: .8em;
+    text-indent: 10px;
+  }
+
+  .text>h1 {
+    font-size: 1.3em;
+  }
+
+  .text h1:hover {
+    font-size: 1.3em;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.829);
+  }
+
+  .grouse-moutain {
+    height: auto;
+  }
+
+  .img1 {
+    background-image: url('../../img/mouraineP.jpg');
+
+  }
+
+  .img2 {
+    background-image: url('../../img/grouseP.jpg');
+
+  }
+
+  .img3 {
+    background-image: url('../../img/niagaraP.jpg');
+
+  }
+
+  .img4 {
+    background-image: url('../../img/yukonP.jpg');
+
+  }
+
+  footer p {
+    font-size: .8rem;
+  }
+}

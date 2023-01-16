@@ -1,0 +1,116 @@
+header {
+  background-color: #D9D9D9;
+  position: fixed;
+  width: 100%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+
+a::after {
+  content: ' ';
+  width: 0%;
+  height: 3px;
+  background-color: #000000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.6s ease-in-out;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+a:hover {
+  color: #D92534;
+}
+
+.logo {
+  width: 50px;
+}
+
+#header h2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#header h2 span {
+  color: #D92534;
+}
+
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100000;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: .5rem;
+}
+
+#menu a {
+  display: block;
+  padding: .5rem;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  #btn-mobile {
+    display: block;
+    cursor: pointer;
+  }
+
+  #menu {
+    display: block;
+    position: absolute;
+    width: 75%;
+    top: 70px;
+    right: 0;
+    height: 0px;
+    z-index: 100000;
+    transition: .6s;
+    visibility: hidden;
+    overflow-y: hidden;
+
+  }
+
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: hidden;
+    background-color: #D9D9D9;
+  }
+
+  #menu a {
+    color: black;
+    padding: 1rem 1rem;
+    margin: 0 1rem;
+    border-bottom: 2px solid black;
+  }
+
+  #menu a:hover {
+    background-color: black;
+    color: #D9D9D9;
+  }
+
+  a::after {
+    background-color: #fff;
+  }
+}
+
