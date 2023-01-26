@@ -4,45 +4,11 @@ header {
   width: 100%;
 }
 
-a {
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-  position: relative;
-}
-
-a::after {
-  content: ' ';
-  width: 0%;
-  height: 3px;
-  background-color: #000000;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transition: 0.6s ease-in-out;
-}
-
-a:hover::after {
-  width: 100%;
-}
-
-a:hover {
-  color: #D92534;
-}
-
-.logo {
-  width: 50px;
-}
-
 #header h2 {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-}
-
-#header h2 span {
-  color: #D92534;
 }
 
 #header {
